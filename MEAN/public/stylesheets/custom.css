@@ -1,0 +1,94 @@
+.navbar
+{
+	margin-bottom: 0px;
+	background-color: #f9a255;
+	color:#fafafa;
+}
+.jumbotron
+{
+	background-color: #f9a255;
+	color:#fafafa;
+}
+.btn-primary
+{
+	background-color:#FAAB66;
+	background-image: none;
+	border-color: #FAAB66;
+
+
+}
+
+.pagination>li>a, .pagination>li>span{
+	color:#f9a255;
+}
+.pagination:active{
+	background-color:#f9a255;
+	border-color:#f9a255;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+	background-color:#f9a255;
+	border-color:#f9a255;
+}
+
+.btn-primary>.btn>.btn-lg>.active>a, .btn-primary>.btn>.btn-lg>.active>a:hover, .btn-primary>.btn>.btn-lg>.active>a:focus,.btn-primary>.btn>.btn-lg>.active>a:active,.btn-primary>.btn>.btn-lg>.active>a:visited{
+	background-color:#f9a255;
+	color:#fafafa;
+}
+
+.btn-primary>.btn>.btn-lg>a:visited, .btn-primary>.btn>.btn-lg>a:active{
+	background-color:#f9a255;
+	color:#fafafa;
+}
+
+.bodylink{
+	color:#f9a255;
+
+}
+.btn-primary:hover
+{
+	background-color:#f9a255;
+	border-color:#f9a255;
+}
+a
+{
+	color:#fafafa;
+}
+
+.nav a:active
+{
+	margin-bottom: 0px;
+
+	color:#f9a255;
+}
+.navbar a:visited
+{
+	margin-bottom: 0px;
+
+	color:inherit;
+}
+
+
+.nav>li>a:hover, .nav>li>a:focus{
+	background-color:#fafafa;
+	color:#f9a255;
+}
+
+.navbar a:hover
+{
+	background-color:#fafafa;
+	color:#f9a255;
+}
+
+a:visited
+{
+
+	background-color:#f9a255;
+}
+
+a:hover, a:active
+{
+	background-color:#fafafa;
+	color:#f9a255;
+
+}

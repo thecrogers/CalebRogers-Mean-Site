@@ -1,0 +1,18 @@
+box: robinhansma/wercker-lamp@0.0.14
+
+build:
+  # The steps that will be executed on build
+  steps:
+  - mbrevda/phpcs:
+        directory: /
+        standard: PSR2
+        ignore:
+          - /javascripts
+          - /stylesheets
+          - /MEAN
+          - /later
+          - /images
+          - /fonts
+          - /bootstrap1
+          - /bootstrap
+        report: full

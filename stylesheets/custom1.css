@@ -1,0 +1,102 @@
+.navbar
+{
+	margin-bottom: 0px;
+	background-color: #00853E;
+	color:#fafafa;
+}
+.jumbotron
+{
+	background-color: #00853E;
+	color:#fafafa;
+}
+.btn-primary
+{
+	background-color:#007838;
+	background-image: none;
+	border-color: #007838;
+
+
+}
+
+.adj{
+	margin-top: 20px;
+}
+
+.pagination>li>a, .pagination>li>span{
+	color:#00853E;
+}
+.pagination:active{
+	background-color:#00853E;
+	border-color:#00853E;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+	background-color:#00853E;
+	border-color:#00853E;
+}
+
+.btn-primary>.btn>.btn-lg>.active>a, .btn-primary>.btn>.btn-lg>.active>a:hover, .btn-primary>.btn>.btn-lg>.active>a:focus,.btn-primary>.btn>.btn-lg>.active>a:active,.btn-primary>.btn>.btn-lg>.active>a:visited{
+	background-color:#00853E;
+	color:#fafafa;
+}
+
+.btn-primary>.btn>.btn-lg>a:visited, .btn-primary>.btn>.btn-lg>a:active{
+	background-color:#00853E;
+	color:#fafafa;
+}
+
+.bodylink{
+	color:#00853E;
+
+}
+.btn-primary:hover
+{
+	background-color:#00853E;
+	border-color:#00853E;
+}
+a
+{
+	color:#fafafa;
+}
+
+.nav a:active
+{
+	margin-bottom: 0px;
+
+	color:#00853E;
+}
+.navbar a:visited
+{
+	margin-bottom: 0px;
+
+	color:inherit;
+}
+.bigFont{
+	font-size:16px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+	background-color:#fafafa;
+	color:#00853E;
+}
+
+.navbar a:hover
+{
+	background-color:#fafafa;
+	color:#00853E;
+}
+a{
+	color:#00853E;
+}
+a:visited
+{
+
+	background-color:#00853E;
+}
+
+a:hover, a:active
+{
+	background-color:#fafafa;
+	color:#00853E;
+
+}

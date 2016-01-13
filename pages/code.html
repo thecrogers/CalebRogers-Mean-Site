@@ -1,0 +1,42 @@
+ <div class="jumbotron">
+        <div class="container">
+<h1>  {{project.Title}} </h1>
+<p><span class=" btn btn-primary btn-lg"ng-click="incrementUpvotesProject(project)">Upvote <span class="glyphicon glyphicon-fire"></span></span></span>
+  <a target="_blank" class="btn btn-primary btn-lg" href="{{project.link}}">View Code </a></p>
+  <h4>upvotes: {{project.upvotes}}</h4>
+
+</div>
+</div>
+<div class="container" >
+  <div class="row">
+    <div class="col-md-8">
+
+
+        <p>
+        {{project.Desc}}
+        </p>
+        <h3> Run The Code</h3>
+        <p>
+          <form ng-submit="runCode()">
+          <p>  {{project.Help}}: <input type="text"  ng-model="args"></input></p>
+            <input type="text" ng-model="file" ng-hide="true"ng-value="{{project.content}}"></input>
+            <button class="btn btn-primary btn-md"  type="submit">Post</button>
+          </form>
+        </p>
+        {{$scope.result}}
+        <br>
+
+      </div>
+
+
+    <div class="col-md-4">
+
+      <img src="images/profile.jpg" class="img-responsive img-rounded" title=" Caleb W Rogers" alt="Head shot of Caleb W Rogers" width="300px" >
+      <p>Want to know more about my work. Go ahead and take a look and my live code demos or look at the source code on <a class="bodylink" href="github.com/thecrogrs"> github </a> </p>
+      <p>
+        Want to more about my personaly. Go ahead and jump over to my blog, or to my
+        <a class="bodylink" href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">Linkedin profile</a> or my
+        <a class="bodylink" href="https://twitter.com/TheCrogers">Twitter</a>.
+      </p>
+    </div>
+    </div>

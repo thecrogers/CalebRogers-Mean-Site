@@ -1,0 +1,60 @@
+<div class="jumbotron">
+  <div class="container">
+    <div>
+      <h1>Welcome, Caleb</h1>
+      <p>manage your content from here. </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+
+
+        <h2>Blog Post</h2>
+        <p>
+          <form ng-submit="addPost()">
+            <input type="text" placeholder="Title" ng-model="title"></input>
+            <input type="text" placeholder="tags" ng-model="tags"></input>
+            <input type="text" placeholder="summery" ng-model="summery"></input>
+            <input type="text" placeholder="post" ng-model="content"></input>
+            <button type="submit">Post</button>
+          </form>
+        </p>
+        <h2>Project Post</h2>
+        <p>
+          <form ng-submit="addProject()">
+            <input type="text" placeholder="Title" ng-model="proTitle"></input>
+            <input type="text" placeholder="tags" ng-model="proTags"></input>
+            <input type="text" placeholder="summery" ng-model="proSummery"></input>
+            <input type="text" placeholder="exicutible" ng-model="proContent"></input>
+            <input type="text" placeholder="link" ng-model="proLink"></input>
+            <input type="text" placeholder="hint" ng-model="proHint"></input>
+            <button type="submit">Post</button>
+          </form>
+          <br>
+          <br>
+          <hr>
+          </p>
+          <p>
+            <div ng-repeat="post in posts">
+              <h4>{{post.title}} <span class="btn btn-primary btn-lg" role="button" ng-click="removePost(post)"> Remove Post</span></h4>
+            </div>
+            <div ng-repeat="project in projects">
+              <h4>{{project.title}} <span class="btn btn-primary btn-lg" role="button" ng-click="removeProject(project)"> Remove Project</span></h4>
+            </div>
+          </p>
+
+
+
+  </div>
+  <div class="col-md-4">
+
+    <img src="images/profile.jpg" class="img-responsive img-rounded" title=" Caleb W Rogers" alt="Head shot of Caleb W Rogers" width="300px" >
+    <p>Want to know more about my work. Go ahead and take a look and my live code demos or look at the source code on <a class="bodylink" href="github.com/thecrogrs"> github </a> </p>
+    <p>
+      Want to more about my personaly. Go ahead and jump over to my blog, or to my <a class="bodylink" href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">Linkedin profile</a> or my <a class="bodylink" href="https://twitter.com/TheCrogers">Twitter</a>.
+    </p>
+
+    <!--
+    </form>--!>

@@ -1,0 +1,47 @@
+<div class="jumbotron">
+  <div class="container" ng-repeat="project in projects"  ng-init="newest=$last">
+    <div ng-if="newest">
+      <h1>{{project.Title}}</h1>
+      <p>{{project.Desc}}</p>
+      <p>
+        <a class="btn btn-primary btn-lg " href="{{project.link}}" role="button"> View Code <span class="glyphicon glyphicon-forward"></span></a>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8" >
+
+      <div dir-paginate="project in projects | itemsPerPage: 3 |  orderBy: '-upvotes' ">
+        <h2>{{project.Title}}</h2>
+
+        <h4>
+          <!--upvotes: {{project.upvotes}} ,{{project.tags}} for when it is implemented later-->
+        </h4>
+        <p>
+          {{project.Desc}}
+        </p>
+
+        <!--  <a class=" btn btn-primary btn-lg" aria-hidden="true" role="button" ng-click="incrementUpvotesProject(project)"> Upvote <span class="glyphicon glyphicon-fire"></span></a>-->
+
+        <a class="btn btn-primary btn-lg " href="{{project.link}}"  role="button"> View Code <span class="glyphicon glyphicon-forward"></span></a>
+      </div>
+    <br>
+    <dir-pagination-controls [max-size=""]
+    [direction-links=""]
+    [boundary-links=""]
+    [on-page-change=""]
+    [pagination-id=""]
+    [template-url=""]
+    template-url="pages/dirPagination.tpl.html">
+
+  </dir-pagination-controls>
+</div>
+  <div class="col-md-4">
+
+    <img src="images/profile.jpg" class="img-responsive img-rounded" title=" Caleb W Rogers" alt="Head shot of Caleb W Rogers" width="300px" >
+    <p>Want to know more about my work. Go ahead and take a look and my live code demos or look at the source code on <a class="bodylink" href="github.com/thecrogrs"> github </a> </p>
+    <p>
+      Want to more about my personaly. Go ahead and jump over to my blog, or to my <a class="bodylink" href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">Linkedin profile</a> or my <a class="bodylink" href="https://twitter.com/TheCrogers">Twitter</a>.
+    </p>

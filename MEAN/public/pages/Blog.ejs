@@ -1,0 +1,49 @@
+ <div class="jumbotron">
+        <div class="container" ng-repeat="post in posts"  ng-init="newest=$last">
+      <div ng-if="newest">
+    <h1>{{post.title}}</h1>
+    <p>{{post.summery}}</p>
+    <p><a class="btn btn-primary btn-lg" href="#/posts/{{$index}}" role="button">Read Now <span class="glyphicon glyphicon-forward"></a></p>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+
+      <div dir-paginate="post in posts | itemsPerPage: 3 |  orderBy: '-upvotes'">
+        <h2>{{post.title}}</h2>
+
+
+        <h4>
+        upvotes: {{post.upvotes}}</h4><!-- , Tags: {{post.tags}} when implemented later-->
+        <p>
+          {{post.summery}}
+        </p>
+
+
+          <a class="btn btn-primary btn-lg " role="button" ng-click="incrementUpvotes(post)"> Upvote <span class="glyphicon glyphicon-fire"></span></a>
+
+        <a class="btn btn-primary btn-lg" href="#/posts/{{$index}}" role="button">Read Now <span class="glyphicon glyphicon-forward"></a>
+
+      </div>
+      <br>
+      <hr>
+      <dir-pagination-controls [max-size=""]
+      [direction-links=""]
+      [boundary-links=""]
+      [on-page-change=""]
+      [pagination-id=""]
+      [template-url=""]
+      template-url="pages/dirPagination.tpl.html">
+
+    </dir-pagination-controls>
+
+    </div>
+    <div class="col-md-4">
+
+      <img src="images/profile.jpg" class="img-responsive img-rounded" title=" Caleb W Rogers" alt="Head shot of Caleb W Rogers" width="300px" >
+      <p>Want to know more about my work. Go ahead and take a look and my live code demos or look at the source code on <a class="bodylink" href="github.com/thecrogrs"> github </a> </p>
+      <p>
+        Want to more about my personaly. Go ahead and jump over to my blog, or to my <a class="bodylink" href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">Linkedin profile</a> or my <a class="bodylink" href="https://twitter.com/TheCrogers">Twitter</a>.
+      </p>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang ="en" ng-app="portfolio">
+<head>
+  <meta charset=utf-8">
+  <title>Caleb W Rogers | Programmer & Web Developer | Dallas</title>
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="artical">
+  <meta property="og:title" content="Caleb W Rogers | Programmer & Web Developer | Dallas">
+  <meta property="og:description" content="I'm an apriring programer and web developer, who is about to graduate with a degree in Computer Science. I have worked with: C, C++, java, javascript, PHP, and html">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="javascript/custom.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/stylesheets/custom.css">
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/angular-ui-router.js"></script>
+    <script src="javascripts/dirPagination.js"></script>
+
+    <script src="javascripts/angularApp.js"></script>
+    <body ng-controller="mainController">
+      <nav class="navbar  " role="navigation">
+        <div class="container">
+
+           <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav navbar-right nav">
+              <li >
+                <a ui-sref="About"> <b>About</b></a>
+              </li>
+              <li>
+                <a ui-sref="Blog"> <b>Blog</b></a>
+              </li>
+              <li ">
+                <a ui-sref="projects"> <b>Projects</b></a>
+              </li>
+              <li ">
+                <a ui-sref="Contact"> <b>Contact</b></a>
+              </li>
+            </ul>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </nav>
+
+        <div>
+
+          <div class="jumbotron">
+                 <div class="container">
+         <h1>  {{project.title}} </h1>
+         <p><span class=" btn btn-primary btn-lg"ng-click="incrementUpvotes(project)">Upvote <span class="glyphicon glyphicon-fire"></span></span></span>
+           <a target="_blank" class="btn btn-primary btn-lg" href="{{project.link}}">View Code </a></p>
+           <h4>upvotes: {{project.upvotes}}, Tags: {{project.tags}}</h4>
+
+         </div>
+         </div>
+         <div class="container" >
+           <div class="row">
+             <div class="col-md-8">
+
+
+                 <p>
+                 {{project.summery}}
+                 </p>
+                 <h3> Run The Code</h3>
+                 <p>
+                   <form ng-submit="runCode()">
+                     <input type="text" placeholder="{{project.hint}}" ng-model="argument"></input>
+                     <input type="text" ng-model="file" ng-hide="true"ng-value="{{project.content}}"></input>
+                     <button class="btn btn-primary btn-md"  type="submit">Post</button>
+                   </form>
+                 </p>
+                 {{results}}
+                 <br>
+                 <br>
+                 <p>Arguments to run on file: {{$scope.args}}<br>File to exicute: {{$scope.file}}</p>
+
+               </div>
+
+
+             <div class="col-md-4">
+
+               <img src="images/profile.jpg" class="img-responsive img-rounded" title=" Caleb W Rogers" alt="Head shot of Caleb W Rogers" width="300px" >
+               <p>Want to know more about my work. Go ahead and take a look and my live code demos or look at the source code on <a class="bodylink" href="github.com/thecrogrs"> github </a> </p>
+               <p>
+                 Want to more about my personaly. Go ahead and jump over to my blog, or to my
+                 <a class="bodylink" href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">Linkedin profile</a> or my
+                 <a class="bodylink" href="https://twitter.com/TheCrogers">Twitter</a>.
+               </p>
+             </div>
+             </div>
+
+
+
+          </div>
+      </div>
+
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="/javascripts/bootstrap.min.js"></script>
+
+    </body>
+    </html>

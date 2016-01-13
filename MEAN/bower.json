@@ -1,0 +1,15 @@
+{
+  "name": "calebrogers",
+  "version": "1",
+  "description": "caleb rogers personal web site",
+  "main": "/root/calebrogers",
+  "keywords": [
+    "calebrogers.net"
+  ],
+  "authors": [
+    "Caleb Rogers"
+  ],
+  "license": "apache",
+  "homepage": "calebrogers.net",
+  "private": true
+}
