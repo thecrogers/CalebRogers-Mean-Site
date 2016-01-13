@@ -1,6 +1,6 @@
 Calebrogers.net
 ===============
-[![Build Status](https://magnum.travis-ci.com/thecrogers/Calebrogers.net.svg?token=pg8YjKyaWqsu4EEwyjmb&branch=master)](https://magnum.travis-ci.com/thecrogers/Calebrogers.net)
+
 
 This is the code for my reboot of my web site.
 I realized that my first creation of my web site was not very functional, and did not look good at all. 
